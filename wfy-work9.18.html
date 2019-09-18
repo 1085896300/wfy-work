@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="show">
+
+    </div>
+    <input type="text" id="number1" placeholder="请输入数字1">
+    <input type="text" id="number2" placeholder="请输入数字2">
+    <button id="btn">结果</button>
+    <script>
+       btn.onclick=function(){
+           console.log(number1.value);
+           var N1=number1.value;
+           var n1=parseInt(N1);
+           console.log(number2.value);
+           var N2=number2.value;
+           var n2=parseInt(N2);          
+           if(isNaN(number1.value||number2.value)==true){
+        	alert("只能输入数字");
+           }else{
+        	show.innerHTML=(n1+n2); 
+           };
+       };
+    </script>
+</body>
+</html>
