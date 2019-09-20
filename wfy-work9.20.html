@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body> 
+	<div id="re"></div>
+    <script>
+        function result(){
+        	var n1=prompt("请输入第一个数字");
+            var n2=prompt("请输入第二个数字");
+            var n3=prompt("请输入+-*/任意一个"); 
+            var r=n3=='+'?n1+n2:n3=='-'?n1-n2:n3=='*'?(n1*n2):n3=='/'?(n1/n2):("您的输入有误");
+            re.innerHTML=r;
+        }
+        result();
+    </script>
+</body>
+</html>
